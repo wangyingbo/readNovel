@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -1872,7 +1872,6 @@
 				EE105A6F2282BB78002B9B1D /* Frameworks */,
 				EE105A702282BB78002B9B1D /* Resources */,
 				D1C3E248A25D9D80925F4A3D /* [CP] Embed Pods Frameworks */,
-				79DE1F7F5DD7E67E6B0229A7 /* [CP] Copy Pods Resources */,
 				EE25F7212297840000412811 /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -1893,7 +1892,6 @@
 				EE25F70C229783FF00412811 /* Sources */,
 				EE25F70D229783FF00412811 /* Frameworks */,
 				EE25F70E229783FF00412811 /* Resources */,
-				E92FCA9AD1A12244E1F32525 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2012,45 +2010,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		79DE1F7F5DD7E67E6B0229A7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LookNovel/Pods-LookNovel-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D1C3E248A25D9D80925F4A3D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LookNovel/Pods-LookNovel-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
-				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LookNovel/Pods-LookNovel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LookNovel/Pods-LookNovel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LookNovel/Pods-LookNovel-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LookNovel/Pods-LookNovel-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D98A15DA67150783A36DE13E /* [CP] Check Pods Manifest.lock */ = {
@@ -2069,21 +2043,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E92FCA9AD1A12244E1F32525 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-recentBook/Pods-recentBook-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2554,7 +2513,7 @@
 				CODE_SIGN_ENTITLEMENTS = LookNovel/LookNovel.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RJSUQXZ7UW;
+				DEVELOPMENT_TEAM = CKL54C2S5G;
 				GCC_PREFIX_HEADER = LookNovel/lookNovel.pch;
 				INFOPLIST_FILE = LookNovel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2562,7 +2521,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wcs.LookNovels;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyb.LookNovels;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2578,7 +2537,7 @@
 				CODE_SIGN_ENTITLEMENTS = LookNovel/LookNovel.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RJSUQXZ7UW;
+				DEVELOPMENT_TEAM = CKL54C2S5G;
 				GCC_PREFIX_HEADER = LookNovel/lookNovel.pch;
 				INFOPLIST_FILE = LookNovel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2586,7 +2545,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wcs.LookNovels;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyb.LookNovels;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2601,7 +2560,7 @@
 				CODE_SIGN_ENTITLEMENTS = recentBook/recentBook.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RJSUQXZ7UW;
+				DEVELOPMENT_TEAM = CKL54C2S5G;
 				GCC_PREFIX_HEADER = LookNovel/lookNovel.pch;
 				INFOPLIST_FILE = recentBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2610,7 +2569,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wcs.LookNovels.recentBook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyb.LookNovels.recentBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2625,7 +2584,7 @@
 				CODE_SIGN_ENTITLEMENTS = recentBook/recentBook.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RJSUQXZ7UW;
+				DEVELOPMENT_TEAM = CKL54C2S5G;
 				GCC_PREFIX_HEADER = LookNovel/lookNovel.pch;
 				INFOPLIST_FILE = recentBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2634,7 +2593,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wcs.LookNovels.recentBook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyb.LookNovels.recentBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
